@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Workshop #HTML-FORM</h1>
+
+    
+    <form>  
+        <table>
+            <tr>
+                <td><label for="fname"><b>ชื่อ</b></label></td>
+                <td><input type="text" id="fname" name="fname"></td>
+            </tr> 
+            <tr>
+                <td><label for="lname"><b>นามสกุล</b></label></td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="birthday"><b>วัน/เดือน/ปีเกิด</b></label></td>
+                <td><input type="date" id="birthday" name="birthday"></td>
+            </tr>
+            <tr>
+                <td><label for="age"><b>อายุ</b></label></td>
+                <td><input type="text" id="age" name="age"></td>
+            </tr>
+            <tr>
+                <td><label for="sex"><b>เพศ</b></label></td>
+                <td><input type="radio" id="man" name="sex" value="MAN">  
+                    <label for="man"><b>ชาย</b></label> 
+                    <input type="radio" id="woman" name="sex" value="WOMAN">  
+                    <label for="woman"><b>หญิง</b></label></td>
+            </tr>
+            <tr>
+                <td><label for="myfile"><b>รูป</b></label></td>
+                <td><input type="file" id="myfile" name="myfile"></td>
+            </tr>
+            <tr>
+                <td><label for="adress"><b>ที่อยู่</b></label></td>
+                <td><textarea rows="4" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="color"><b>สีที่ชอบ</b></label></td>
+                <td>
+                    <select id="color" name="color" size="1">  
+                        <option value="red"><b>สีแดง</b></option>  
+                        <option value="yellow"><b>สีเหลือง</b></option>  
+                        <option value="green"><b>สีเขียว</b></option>  
+                        <option value="blue"><b>สีฟ้า</b></option>  
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="music"><b>แนวเพลงที่ชอบ</b></label></td>
+                <td><input type="radio" id="life" name="music" value="LIFE">  
+                    <label for="life"><b>เพื่อชีวิต</b></label> 
+                    <input type="radio" id="lookthung" name="music" value="LOOKTHUNG">  
+                    <label for="lookthung"><b>ลูกทุ่ง</b></label>  
+                    <input type="radio" id="etc" name="music" value="ETC">  
+                    <label for="etc"><b>อื่นๆ</b></label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="ok" name="ok" value="OK">  <label for="ok"> <b>ยินยอมให้เก็บข้อมูล</b> </label></td>
+            </tr>
+            <tr>
+                <td><input type="reset"></td>
+                <td><input type="submit"></td>
+            </tr>
+
+    </form>
+    
+
+</body>
+</html>
