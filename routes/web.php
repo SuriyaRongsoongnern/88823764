@@ -21,7 +21,6 @@ Route::get('/', function () {
 
 //การสร้าง Route
 Route::get('/about',[AboutController::class,'index']);
-
 Route::get('/index',[IndexController::class,'index']);
 
 Route::get('/my-route/{input_data?}', function ($input_data="") {

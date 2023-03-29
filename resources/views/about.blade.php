@@ -9,5 +9,8 @@
 <body>
     <h1>ยินดีต้อนรับเข้าสู่เว็บไซต์</h1>
     <p>BISHOPPz - บริการจ้างเล่นเกม</p>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/index">Index</a>
 </body>
 </html>
