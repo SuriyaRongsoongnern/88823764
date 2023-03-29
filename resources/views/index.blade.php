@@ -27,5 +27,15 @@
         <a href="">{{$menu}}</a>
     @endforeach
 
+    <ul>
+    @for($i=1; $i<=5; $i++)
+        <li>&i</li>
+    @endfor
+    </ul>
+
+    @for($i=1; $i<=5; $i++)
+        <p>&i</p>
+    @endfor
+
 </body>
 </html>
