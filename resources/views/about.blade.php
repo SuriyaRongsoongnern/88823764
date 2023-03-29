@@ -10,7 +10,9 @@
     <h1>ยินดีต้อนรับเข้าสู่เว็บไซต์</h1>
     <p>BISHOPPz - บริการจ้างเล่นเกม</p>
 
-    {{$address}}
+    <p>ที่อยู่ : {{$address}}</p>
+    <p>เบอร์โทร : {{$telephone}}</p>\
+    <p>อีเมล : {{$email}}</p>
 
     <a href="{{url('/')}}">Home Laravel</a>
     <a href="{{route('about')}}">About</a>
