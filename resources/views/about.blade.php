@@ -11,6 +11,6 @@
     <p>BISHOPPz - บริการจ้างเล่นเกม</p>
     <a href="{{url('/')}}">Home Laravel</a>
     <a href="{{route('about')}}">About</a>
-    <a href="{{url('/index')}}">Index</a>
+    <a href="{{route('index')}}">Index</a>
 </body>
 </html>
