@@ -18,8 +18,13 @@ Route::get('/', function () {
 });
 
 //การสร้าง Route
-Route::get('/user',function () {
-    echo "Hello";
+Route::get('/about',function () {
+    echo "Hello World";
+});
+
+//ส่ง Parameter ไปพร้อมกับ Route
+Route::get('/users/{name}',function($name){
+    echo "<h1>Hello $name</h1>";
 });
 
 Route::get('/my-route/{input_data?}', function ($input_data="") {
