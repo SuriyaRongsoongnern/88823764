@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//การสร้าง Route
+Route::get('/user',function () {
+    echo "Hello";
+});
+
 Route::get('/my-route/{input_data?}', function ($input_data="") {
 
     $datas['name'] = $input_data;
