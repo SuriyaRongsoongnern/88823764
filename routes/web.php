@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\IndexController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,9 +22,7 @@ Route::get('/', function () {
 //การสร้าง Route
 Route::get('/about',[AboutController::class,'index']);
 
-Route::get('/index',function () {
-    return view('index');
-});
+Route::get('/index',[IndexController::class,'index']);
 
 Route::get('/my-route/{input_data?}', function ($input_data="") {
 
