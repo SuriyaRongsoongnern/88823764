@@ -11,8 +11,10 @@
     <p>BISHOPPz - บริการจ้างเล่นเกม</p>
 
     <p>ที่อยู่ : {{$address}}</p>
-    <p>เบอร์โทร : {{$telephone}}</p>\
+    <p>เบอร์โทร : {{$telephone}}</p>
     <p>อีเมล : {{$email}}</p>
+    <p>{{$error}}</p>
+    <p>{{$select}}</p>
 
     <a href="{{url('/')}}">Home Laravel</a>
     <a href="{{route('about')}}">About</a>
