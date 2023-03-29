@@ -19,12 +19,11 @@ Route::get('/', function () {
 
 //การสร้าง Route
 Route::get('/about',function () {
-    echo "Hello World";
+    return view('about');
 });
 
-//ส่ง Parameter ไปพร้อมกับ Route
-Route::get('/users/{name}',function($name){
-    echo "<h1>Hello $name</h1>";
+Route::get('/index',function () {
+    return view('index');
 });
 
 Route::get('/my-route/{input_data?}', function ($input_data="") {
