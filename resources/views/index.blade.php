@@ -10,12 +10,22 @@
     <?php
 
     $user = "BISHOPPz";
+    $arr = array("Home","Member","About","Contact");
 
     ?>
-    <h1>ยินดีต้อนรับเข้าสู่เว็บไซต์</h1>
+    <h1>ยินดีต้อนรับเข้าสู่เว็บไซต์ {{$user}} </h1>
     <p>BISHOPPz - บริการจ้างเล่นเกม</p>
-    {{$user}}
+    <h1>{{$user}}</h1>
 
+    @if($user == "BISHOPPz")
+        <h1>คนนี้เป็นแอดมิน</h1>
+    @else
+        <h1>คนนี้เป็นสมาชิก</h1>
+    @endif
+
+    @foreach($arr as $menu)
+        <a href="">{{$menu}}</a>
+    @endforeach
 
 </body>
 </html>
