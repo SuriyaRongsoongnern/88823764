@@ -20,6 +20,10 @@ Route::get('/', function () {
 //การสร้าง Route
 Route::get('/about','AboutController@index');
 
+Route::get('/index',function () {
+    return view('index');
+});
+
 Route::get('/my-route/{input_data?}', function ($input_data="") {
 
     $datas['name'] = $input_data;
