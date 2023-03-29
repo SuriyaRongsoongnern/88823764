@@ -18,13 +18,7 @@ Route::get('/', function () {
 });
 
 //การสร้าง Route
-Route::get('/about',function () {
-    return view('about');
-});
-
-Route::get('/index',function () {
-    return view('index');
-});
+Route::get('/about','AboutController@index');
 
 Route::get('/my-route/{input_data?}', function ($input_data="") {
 
