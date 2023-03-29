@@ -29,12 +29,12 @@
 
     <ul>
     @for($i=1; $i<=5; $i++)
-        <li>$i</li>
+        <li>{{$i}}</li>
     @endfor
     </ul>
 
     @for($i=1; $i<=5; $i++)
-        <p>$i</p>
+        <p>{{$i}}</p>
     @endfor
 
 </body>
