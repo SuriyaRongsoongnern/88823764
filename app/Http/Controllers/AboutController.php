@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class AboutController extends Controller
 {
     function index(){
-        return view('about');
+        $ad = "บ้านเลขที่ 56 ม.2 ท่าบุญมี, เกาะจันทร์, ชลบุรี 20240";
+        return view('about',['address'=>$ad]);
     }
 }
