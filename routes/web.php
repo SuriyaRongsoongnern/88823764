@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 //การสร้าง Route
-Route::get('/about',[AboutController::class,'index']);
+Route::get('/about/12345',[AboutController::class,'index'])->name('about');
 Route::get('/index',[IndexController::class,'index']);
 
 Route::get('/my-route/{input_data?}', function ($input_data="") {
